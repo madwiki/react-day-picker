@@ -129,6 +129,9 @@ export default class DayPicker extends Component {
     this.setState({
       currentMonth: nextMonth
     }, () => {
+      this.setState({
+        currentMonth: nextMonth
+      });
       if (callback) {
         callback();
       }
@@ -147,6 +150,9 @@ export default class DayPicker extends Component {
     this.setState({
       currentMonth: prevMonth
     }, () => {
+      this.setState({
+        currentMonth: prevMonth
+      });
       if (callback) {
         callback();
       }
