@@ -217,6 +217,9 @@ var DayPicker =
 	      this.setState({
 	        currentMonth: nextMonth
 	      }, function () {
+	      	this.setState({
+	      	  currentMonth: nextMonth
+	      	});
 	        if (callback) {
 	          callback();
 	        }
@@ -239,6 +242,9 @@ var DayPicker =
 	      this.setState({
 	        currentMonth: prevMonth
 	      }, function () {
+	      	this.setState({
+	      	  currentMonth: prevMonth
+	      	});
 	        if (callback) {
 	          callback();
 	        }
